@@ -454,6 +454,7 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         padding: 10px;
+        position: relative;
     }
 
     .nav-bar {
@@ -473,7 +474,9 @@ footer {
     .home-container {
         flex-direction: column;
         align-items: center;
-        padding-left: 1rem;
+        padding: 1rem; 
+        max-width: 100%; 
+        margin: 0 auto; 
     }
 
     .row {
@@ -487,13 +490,13 @@ footer {
     }
 
     .home-img {
-        width: 100%;
+        width: 80%;
         position: static;
         margin-top: 1rem;
     }
 
     .main {
-        margin-top: 5rem;
+        margin-top: 2rem;
         background-position: center top -5rem;
     }
 
@@ -537,7 +540,21 @@ footer {
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    .service-offers p {
+        width: 100%;
+        max-width: 35rem;
+        margin: 0.5rem;
+        opacity: 70%;
+        font-weight: 400;
+        white-space: pre-line; 
+    }
+
+
+    .service-item {
+        width: 100%;
     }
 
     .form-section {
@@ -561,5 +578,40 @@ footer {
         margin-left: 0;
         left: 0;
         top: 2rem;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 1.25rem;
+        gap: 1rem;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 42px;
+        border-radius: 5px;
+        color: #fff;
+        box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+        border: 2px double transparent;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+        width: 100%;
+    }
+
+    .btn span {
+        padding: 0 20px;
+    }
+
+    .btn-2 {
+        width: 100%;
+    }
+
+    .h5-heading {
+        font-size: 18px; 
+        text-align: center; 
     }
 }
