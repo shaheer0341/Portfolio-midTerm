@@ -451,7 +451,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     header{
         padding-right: 10rem;
     }
@@ -514,7 +514,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .working-experience-section {
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
     }
